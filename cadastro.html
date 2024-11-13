@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Evento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Cadastro de Eventos</h1>
+    <form id="eventForm">
+        <label for="title">Título do Evento:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Horário:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="location">Local:</label>
+        <input type="text" id="location" name="location" required>
+
+        <button type="submit">Cadastrar Evento</button>
+    </form>
+
+    <!-- Botão para ir para a lista de eventos -->
+    <button onclick="window.location.href='index.html'">Ver Lista de Eventos</button>
+
+    <script src="js/cadastro.js"></script>
+</body>
+</html>
