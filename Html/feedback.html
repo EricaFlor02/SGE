@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Feedback - UNEB</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../img/uneb-logo.png" alt="Logo UNEB" class="logo">
+        <nav>
+            <a href="index.html">Voltar ao Dashboard</a>
+        </nav>
+        <header>
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="criar-evento.html">Criar Evento</a>
+                <a href="feedback.html">Enviar Feedback</a>
+                <a href="configuracoes.html">Configurações</a>
+                <a href="relatorios.html">Relatórios</a>
+                <a href="gerenciar-clubes.html">Gerenciar Clubes</a>
+            </nav>
+        </header>
+        
+    </header>
+    <main>
+        <h1>Enviar Feedback</h1>
+        <form id="feedbackForm">
+            <label for="event">Selecione o Evento:</label>
+            <select id="event" name="event" required>
+                <!-- Os eventos cadastrados serão carregados dinamicamente -->
+            </select>
+
+            <label for="rating">Avaliação:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">Excelente</option>
+                <option value="4">Bom</option>
+                <option value="3">Regular</option>
+                <option value="2">Ruim</option>
+                <option value="1">Péssimo</option>
+            </select>
+
+            <label for="comments">Comentários:</label>
+            <textarea id="comments" name="comments" placeholder="Escreva seus comentários" required></textarea>
+
+            <button type="submit">Enviar Feedback</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Universidade do Estado da Bahia. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/feedback.js"></script>
+</body>
+</html>

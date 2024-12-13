@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - UNEB</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../img/uneb-logo.png" alt="Logo UNEB" class="logo">
+        <nav>
+            <a href="index.html">Voltar </a>
+        </nav>
+    </header>
+
+    <header>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="criar-evento.html">Criar Evento</a>
+            <a href="feedback.html">Enviar Feedback</a>
+            <a href="configuracoes.html">Configurações</a>
+            <a href="relatorios.html">Relatórios</a>
+            <a href="gerenciar-clubes.html">Gerenciar Clubes</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Configurações do Usuário</h1>
+        <form id="settingsForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail institucional" disabled>
+
+            <label for="notifications">Notificações:</label>
+            <input type="checkbox" id="notifications" name="notifications">
+            <label for="notifications">Receber notificações sobre eventos</label>
+
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Universidade do Estado da Bahia. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/configuracoes.js"></script>
+</body>
+</html>

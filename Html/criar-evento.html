@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Evento - UNEB</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../img/uneb-logo.png" alt="Logo UNEB" class="logo">
+        <nav>
+            <a href="admin-dashboard.html">Voltar</a>
+            <button onclick="logout()">Sair</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Criar Evento</h1>
+        <form id="eventForm">
+            <label for="title">Título do Evento:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Horário:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="location">Local:</label>
+            <input type="text" id="location" name="location" required>
+
+            <button type="submit">Criar Evento</button>
+        </form>
+    </main>
+    <script src="../js/eventos.js"></script>
+    <script src="../js/restricao.js"></script>
+</body>
+</html>

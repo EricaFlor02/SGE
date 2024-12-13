@@ -1,129 +1,135 @@
-/* Estilos gerais */
+/* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #002f5e;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #002f5e;
+    color: #ffffff;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para o título */
-h1 {
-    color: #333;
-    margin-top: 20px;
+header .logo {
+    height: 50px;
 }
 
-/* Estilos para a lista de eventos */
-.event-list {
-    width: 80%;
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #002f5e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Formulários */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 20px auto;
-}
-
-.event {
-    background-color: #fff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.event h2 {
-    margin: 0;
-}
-
-.event p {
-    color: #666;
-}
-
-.event button {
-    background-color: #5cd2d6;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-/* Estilos para o formulário */
-form {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    max-width: 600px;
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-label {
+form label {
+    font-weight: bold;
     margin-top: 10px;
-    color: #333;
 }
 
-input, textarea {
-    padding: 8px;
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #5c85d6;
+form button {
+    background-color: #002f5e;
     color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-body {
-    font-family: Arial, sans-serif;
+form button:hover {
+    background-color: #ffcc00;
+    color: #002f5e;
+}
+
+/* Layout Responsivo */
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h1 {
-    color: #333;
-    margin-top: 20px;
-}
-
-.event-list, form {
-    width: 80%;
-    max-width: 600px;
+    justify-content: center;
+    min-height: 100vh;
     padding: 20px;
 }
 
-.new-event-button, .back-to-list-button {
-    background-color: #5c85d6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px 0;
-    cursor: pointer;
-    font-size: 16px;
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
-.new-event-button:hover, .back-to-list-button:hover {
-    background-color: #4a6db3;
-}
-
-.event {
-    background-color: #fff;
-    padding: 15px;
-    margin: 10px 0;
+/* Alerta de Erro */
+.alert {
+    display: none; /* Inicialmente escondido */
+    color: #ff0000;
+    background-color: #ffe6e6;
+    padding: 10px;
     border-radius: 5px;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
-.event button {
-    background-color: #5c85d6;
-    color: white;
+/* Botões */
+button {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #002f5e;
+    color: #ffffff;
     border: none;
-    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: #002f5e;
 }

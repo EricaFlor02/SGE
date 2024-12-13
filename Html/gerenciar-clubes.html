@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Clubes - UNEB</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../img/uneb-logo.png" alt="Logo UNEB" class="logo">
+        <nav>
+            <a href="index.html">Voltar ao Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Gerenciamento de Clubes</h1>
+        <form id="clubForm">
+            <label for="clubName">Nome do Clube:</label>
+            <input type="text" id="clubName" name="clubName" placeholder="Digite o nome do clube" required>
+
+            <label for="mission">Missão:</label>
+            <textarea id="mission" name="mission" placeholder="Digite a missão do clube" required></textarea>
+
+            <label for="vision">Visão:</label>
+            <textarea id="vision" name="vision" placeholder="Digite a visão do clube" required></textarea>
+
+            <button type="submit">Salvar Informações</button>
+        </form>
+        <div id="clubList">
+            <!-- Lista de clubes gerenciados -->
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Universidade do Estado da Bahia. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/gerenciarClubes.js"></script>
+</body>
+</html>
